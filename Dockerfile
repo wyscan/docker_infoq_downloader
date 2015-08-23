@@ -4,7 +4,7 @@ MAINTAINER Robert Simmons <robert@simmons.org>
 RUN apt-get update && apt-get install -y git python-pip python-dev libxml2-dev libxslt-dev zlib1g-dev
 
 WORKDIR /opt
-RUN git clone https://github.com/mtayseer/infoq-downloader.git
+RUN git clone https://github.com/joncasdam/infoq-downloader.git
 WORKDIR /opt/infoq-downloader
 RUN pip install -r /opt/infoq-downloader/requirements.txt
 VOLUME ["/data"]
